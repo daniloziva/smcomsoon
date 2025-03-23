@@ -11,12 +11,12 @@ export default function Home() {
       <div className="absolute inset-0 w-full h-full bg-[url('/grid.svg')] opacity-5" />
       
       {/* Animated background circles */}
-      <div className="absolute top-0 -left-4 w-48 md:w-72 h-48 md:h-72 bg-[#E8DBC5] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob" />
-      <div className="absolute top-0 -right-4 w-48 md:w-72 h-48 md:h-72 bg-[#D6C2B0] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000" />
-      <div className="absolute -bottom-8 left-20 w-48 md:w-72 h-48 md:h-72 bg-[#C8B4A3] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000" />
+      <div className="absolute top-0 -left-4 w-48 md:w-72 h-48 md:h-72 bg-[#E8DBC5] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob" style={{ WebkitBackdropFilter: 'blur(40px)' }} />
+      <div className="absolute top-0 -right-4 w-48 md:w-72 h-48 md:h-72 bg-[#D6C2B0] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000" style={{ WebkitBackdropFilter: 'blur(40px)' }} />
+      <div className="absolute -bottom-8 left-20 w-48 md:w-72 h-48 md:h-72 bg-[#C8B4A3] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000" style={{ WebkitBackdropFilter: 'blur(40px)' }} />
 
       <div className="relative w-full max-w-[90%] md:max-w-4xl">
-        <div className="backdrop-blur-lg bg-white/10 rounded-2xl p-3 sm:p-4 md:p-6 shadow-2xl border border-white/20">
+        <div className="backdrop-blur-lg bg-white/10 rounded-2xl p-3 sm:p-4 md:p-6 shadow-2xl border border-white/20" style={{ WebkitBackdropFilter: 'blur(16px)' }}>
 
           <div className="mt-0 w-64 sm:w-80 md:w-96 h-16 sm:h-20 md:h-24 mx-auto relative">
               <Image
@@ -59,34 +59,37 @@ export default function Home() {
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
-              className="validate flex flex-col gap-3"
+              className="validate flex flex-col gap-3 w-full"
               target="_blank"
             >
-              <div className="flex flex-col gap-2">
-                <div className="flex flex-col">
+              <div className="flex flex-col gap-2 w-full">
+                <div className="flex flex-col w-full">
                   <input
                     type="email"
                     name="EMAIL"
-                    className="required email px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center w-full"
+                    className="required email w-full px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center appearance-none"
                     id="mce-EMAIL"
                     required
                     placeholder="Email Address *"
+                    style={{ WebkitAppearance: 'none', height: '42px' }}
                   />
                 </div>
-                <div className="flex flex-col sm:flex-row gap-2">
+                <div className="flex flex-col sm:flex-row gap-2 w-full">
                   <input
                     type="text"
                     name="FNAME"
-                    className="px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center flex-1"
+                    className="w-full px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center appearance-none"
                     id="mce-FNAME"
                     placeholder="First Name"
+                    style={{ WebkitAppearance: 'none', height: '42px' }}
                   />
                   <input
                     type="text"
                     name="PHONE"
-                    className="px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center flex-1"
+                    className="w-full px-4 py-2 rounded-lg bg-white/30 border border-white/30 text-[#4A3F35] placeholder-[#8B7B6E] focus:outline-none focus:ring-2 focus:ring-[#8B7B6E] transition-all text-center appearance-none"
                     id="mce-PHONE"
                     placeholder="Phone Number"
+                    style={{ WebkitAppearance: 'none', height: '42px' }}
                   />
                 </div>
               </div>
@@ -101,7 +104,8 @@ export default function Home() {
                   type="submit"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  className="px-6 py-2 bg-[#8B7B6E] text-white rounded-lg font-semibold hover:bg-[#7A6A5D] transition-all duration-200 shadow-lg"
+                  className="px-6 py-2 bg-[#8B7B6E] text-white rounded-lg font-semibold hover:bg-[#7A6A5D] transition-all duration-200 shadow-lg appearance-none"
+                  style={{ WebkitAppearance: 'none' }}
                 >
                   Subscribe
                 </button>
