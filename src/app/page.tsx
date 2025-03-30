@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 relative overflow-hidden bg-white">
       {/* Background pattern */}
-      <div className="absolute inset-0 w-full h-full bg-[url('/grid.svg')] opacity-5" />
+      <div className="absolute inset-0 w-full h-full bg-[url('/grid.svg')] opacity-5 pointer-events-none" />
       
       <div className="container mx-auto px-4 py-8">
         {/* Smoqua image with fixed size and large bottom margin */}
         <div className="flex justify-center mb-12">
-          <div className="relative w-[500px] sm:w-[600px] md:w-[700px] h-[250px] sm:h-[350px] md:h-[400px]">
+          <div className="relative w-[500px] sm:w-[600px] md:w-[700px] h-[200px] sm:h-[350px] md:h-[400px]">
             <Image
               src="/smoqua.png"
               alt="Smoqua"
