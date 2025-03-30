@@ -29,11 +29,11 @@ const CountdownTimer = () => {
   }, []);
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center p-2 sm:p-3 md:p-4">
-      <div className="bg-white/30 backdrop-blur-lg rounded-lg px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 border border-white/30">
-        <div className="text-2xl sm:text-3xl md:text-5xl font-bold mb-0 sm:mb-1 text-[#4A3F35]">{value.toString().padStart(2, '0')}</div>
+    <div className="flex flex-col items-center p-1 sm:p-2">
+      <div className="bg-white/30 backdrop-blur-lg rounded-lg px-2 sm:px-3 py-1 sm:py-2 border-2 border-black">
+        <div className="text-lg sm:text-xl md:text-2xl font-bold mb-0 text-black">{value.toString().padStart(2, '0')}</div>
       </div>
-      <div className="text-xs sm:text-sm uppercase tracking-wider text-[#6B5C50] mt-1 sm:mt-2">{label}</div>
+      <div className="text-xs uppercase tracking-wider text-black mt-1">{label}</div>
     </div>
   );
 
