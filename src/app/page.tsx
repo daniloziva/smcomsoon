@@ -31,7 +31,7 @@ export default function Home() {
             </p>
           </div>
           <form
-            action="https://diligaf.us4.list-manage.com/subscribe/post?u=65c9482759ffc91feb07c7d5e&amp;id=f2dd847475&amp;f_id=0026a7e2f0"
+            action="https://smoqua.us14.list-manage.com/subscribe/post?u=8aea954cec1a823c816b2ccca&amp;id=74d2b280ae&amp;f_id=0068b6e5f0"
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
@@ -72,7 +72,7 @@ export default function Home() {
 
             {/* Bot protection - do not remove */}
             <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
-              <input type="text" name="b_65c9482759ffc91feb07c7d5e_f2dd847475" tabIndex={-1} value="" />
+              <input type="text" name="b_8aea954cec1a823c816b2ccca_74d2b280ae" tabIndex={-1} value="" />
             </div>
 
             <div className="flex justify-center w-full">
