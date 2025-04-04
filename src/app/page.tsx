@@ -69,10 +69,13 @@ export default function Home() {
                 />
               </div>
             </div>
-
+            <div id="mce-responses" className="flex flex-col gap-2 w-full">
+              <div className="w-full px-4 py-2 rounded-lg bg-green-500/30  text-black placeholder-black/50 focus:outline-none focus:ring-2 focus:ring-black transition-all text-center appearance-none" id="mce-error-response" style={{ display: 'none' }}></div>
+              <div className="w-full px-4 py-2 rounded-lg bg-green-500/30  text-black placeholder-black/50 focus:outline-none focus:ring-2 focus:ring-black transition-all text-center appearance-none" id="mce-success-response" style={{ display: 'none' }}></div>
+            </div>
             {/* Bot protection - do not remove */}
             <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
-              <input type="text" name="b_8aea954cec1a823c816b2ccca_74d2b280ae" tabIndex={-1} value="" />
+              <input type="text" name="b_8aea954cec1a823c816b2ccca_74d2b280ae" tabIndex={-1} defaultValue="" />
             </div>
 
             <div className="flex justify-center w-full">
