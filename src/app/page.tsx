@@ -27,7 +27,7 @@ export default function Home() {
         <div className="max-w-md mx-auto w-full">
           <div className="text-center mb-2">
             <p className="text-base sm:text-lg md:text-xl text-black opacity-90">
-              Drop your email to get notified
+              First drop is coming soon. Don't miss out!
             </p>
           </div>
           <form
